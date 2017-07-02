@@ -1,0 +1,12 @@
+<div>
+<h3>Favorit's images</h3>
+	<ul>
+		<li *ngFor="let favorit_image of favorit_images; index as i">
+			<div class="img-wraper"> 
+				<span  class="remove-button" (click)="removeFromFavorit(i)"></span>
+
+				<img class="photo" src="https://farm{{favorit_image.farm}}.static.flickr.com/{{favorit_image.server}}/{{favorit_image.image_id}}_{{favorit_image.secret}}_m.jpg"/>
+			</div>
+		</li>
+	</ul>
+</div>

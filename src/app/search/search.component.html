@@ -1,0 +1,12 @@
+<div>
+	<div id="search-form">
+		<input [(ngModel)]="search_text">
+		<button (click)="searchImg()">Search</button>
+	</div>
+	<h3>Found's images</h3>
+	<ul>
+		<li *ngFor="let image of images">
+			<img class="photo" src="https://farm{{image.farm}}.static.flickr.com/{{image.server}}/{{image.id}}_{{image.secret}}_m.jpg" (click)="addToFavorit(image)"/>
+		</li>
+	</ul>
+</div>

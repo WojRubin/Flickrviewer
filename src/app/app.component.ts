@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
+import { SearchComponent } from './search/search.component';
+import { FavoritComponent } from './favorit/favorit.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'app works!';
+	title = 'Flickr viewer';
+
+
+
+
 }
